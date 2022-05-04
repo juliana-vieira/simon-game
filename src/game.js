@@ -32,7 +32,6 @@ function playSound(){
 
 function checkAnswer(currentLevel){
     if(gamePattern[currentLevel] === userClickedPattern[currentLevel]){
-        console.log("success");
         if(gamePattern.length == userClickedPattern.length){
             setTimeout(function(){
                 playSound();
@@ -53,7 +52,6 @@ function checkAnswer(currentLevel){
 
 
 $("body").keypress(function(){
-    console.log(started);
     if (started == false){
         playSound();
         started = true;
