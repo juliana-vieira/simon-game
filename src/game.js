@@ -40,7 +40,7 @@ function checkAnswer(currentLevel){
     } else {
         $("h1").text("Game Over, Press Any Key to Restart");
         $("body").addClass("game-over");
-        setTimeout(function(){
+        setTimeout(function() {
             $("body").removeClass("game-over");
         }, 200);
         started = false;
